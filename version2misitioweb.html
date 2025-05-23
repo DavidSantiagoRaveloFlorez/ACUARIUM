@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACUARIUM - David Santiago Ravelo Florez</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #caf0f8;
+    }
+
+    .contenedor-maqueta {
+      width: 90%;
+      margin: 20px auto;
+      border: 4px solid green;
+      background-color: white;
+      padding: 10px;
+    }
+
+    header {
+      background-color: #0077b6;
+      padding: 10px;
+      overflow: hidden;
+    }
+
+    header .imagen {
+      float: right;
+      width: 200px;
+      height: 200px;
+      background-color: gold;
+      text-align: center;
+      padding: 20px 10px;
+      box-sizing: border-box;
+    }
+
+    header .bienvenida {
+      color: white;
+      font-size: 20px;
+      padding: 30px 10px;
+    }
+
+    nav.navegacion {
+      background-color: #90e0ef;
+      overflow: hidden;
+      padding: 15px 0;
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    nav.navegacion a {
+      display: inline-block;
+      margin: 0 10px;
+      text-decoration: none;
+      color: #023e8a;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 10px 18px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav.navegacion a:hover {
+      background-color: #0077b6;
+      color: white;
+    }
+
+    section {
+      background-color: #f3722c;
+      float: left;
+      width: 60%;
+      padding: 40px;
+      color: white;
+    }
+
+    aside {
+      background-color: yellow;
+      float: right;
+      width: 35%;
+      padding: 40px;
+      color: black;
+    }
+
+    footer {
+      clear: both;
+      background-color: #023e8a;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    footer li {
+      margin-bottom: 5px;
+    }
+
+    footer img {
+      width: 120px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid white;
+    }
+
+    .gustos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      background-color: #e0f7fa;
+      padding: 40px;
+      color: black;
+    }
+
+    .gustos div {
+      background-color: white;
+      border: 2px solid #0077b6;
+      border-radius: 10px;
+      padding: 15px;
+      font-weight: bold;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .gustos div:hover {
+      transform: scale(1.05);
+      background-color: #d0f0fc;
+    }
+
+    /* Bootstrap-style cards for aside */
+    aside h2 {
+      font-size: 1.5rem;
+    }
+
+    aside p {
+      font-size: 1.1rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Mensaje de uso de Bootstrap -->
+  <div class="alert alert-info text-center m-0">
+    Esta página utiliza Bootstrap junto con maquetación tradicional usando floats y grid.
+  </div>
+
+  <div class="contenedor-maqueta">
+    <!-- Encabezado -->
+    <header>
+      <div class="bienvenida">
+        <h1 class="display-5 fw-bold">ACUARIUM</h1>
+        <p class="lead">Hola, mi nombre es David y te doy la bienvenida a ACUARIUM, una página donde encontrarás el esfuerzo y la diversión.</p>
+      </div>
+      <img class="imagen" src="aguas.jpeg" alt="Mi foto tipo carnet">
+    </header>
+
+    <!-- Navegación -->
+    <nav class="navegacion">
+      <a href="#gustos">¿Qué me gusta de entrenar?</a>
+      <a href="#perfil">Mi perfil</a>
+      <a href="https://aprende-web.net/html/html3_1.php" target="_blank">Enlace externo a tutorial de HTML</a>
+    </nav>
+
+    <!-- Gustos como tarjetas -->
+    <section id="gustos" class="gustos">
+      <div>Me gusta mejorar mi resistencia</div>
+      <div>Me gusta aprender nuevos estilos</div>
+      <div>Me gusta estar saludable</div>
+      <div>Me gusta competir para mejorar</div>
+      <div>Me gusta el estilo mariposa</div>
+    </section>
+
+    <!-- Aside como tarjeta Bootstrap visual -->
+    <aside>
+      <div class="card bg-warning-subtle">
+        <div class="card-body">
+          <h2 class="card-title">Frase del Día</h2>
+          <p class="card-text">"La natación no es solo un deporte, es una forma de vida."</p>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer id="perfil">
+      <ul>
+        <li>David Santiago Ravelo Florez</li>
+        <li>318 7203762</li>
+        <li>davidsantiagoraveloflorez@gmail.com</li>
+        <li>Skolmi</li>
+      </ul>
+      <img src="mifoto.png" alt="Mi foto tipo carnet">
+    </footer>
+  </div>
+
+  <!-- Bootstrap JS (opcional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
